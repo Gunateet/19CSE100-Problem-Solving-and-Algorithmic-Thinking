@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22025"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:44:52 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNTsyMDIyMjNNQVlDMDA2MjsyMDIyLTExLTA0OzExOjM2OjQzIEFNOzMwNTU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNTsyMDIyMjNNQVlDMDA2MjsyMDIyLTExLTA0OzExOjQ0OjUyIEFNOzQ7MzE2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="DECLARING VARIABLES"/>
+            <declare name="a, b, c, d" type="Integer" array="False" size=""/>
+            <output expression="&quot; enter the value of divident &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot; enter the value of division &quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="APPLYING MATHEMATICAL OPERATIONS"/>
+            <assign variable="c" expression="a/b"/>
+            <assign variable="d" expression="a-(b*c)"/>
+            <output expression="&quot;remainder&quot; &amp; d" newline="True"/>
+            <comment text="WE GET THE REMAINDER"/>
+        </body>
+    </function>
+</flowgorithm>
