@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22025"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:18:40 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNTsyMDIyMjNNQVlDMDA2MjsyMDIyLTExLTA0OzA5OjM0OjU3IEFNOzMwNjU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNTsyMDIyMjNNQVlDMDA2MjsyMDIyLTExLTA0OzExOjE4OjQwIEFNOzQ7MzE2Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="DECLARING VARIABLES"/>
+            <declare name="F" type="Integer" array="False" size=""/>
+            <declare name="C" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER THE VALUE OF F&quot;" newline="True"/>
+            <input variable="F"/>
+            <comment text="USING THE FORMULA TO CONVERT FROM FARENHEIT TO CELSIUS&#13;&#10;"/>
+            <assign variable="C" expression="(F - 32 )/1.8"/>
+            <output expression="&quot; CELSIUS &quot; &amp; C" newline="True"/>
+            <comment text="WE GET THE TEMPERATURE IN CELSIUS"/>
+        </body>
+    </function>
+</flowgorithm>

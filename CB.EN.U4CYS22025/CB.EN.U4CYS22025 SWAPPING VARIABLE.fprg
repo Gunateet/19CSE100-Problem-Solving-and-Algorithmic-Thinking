@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22025"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:25:37 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNTsyMDIyMjNNQVlDMDA2MjsyMDIyLTExLTA0OzEwOjIwOjQ5IEFNOzMwNTM="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNTsyMDIyMjNNQVlDMDA2MjsyMDIyLTExLTA0OzExOjI1OjM3IEFNOzk7MzE3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="DECLARING VARIABLES"/>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <output expression="&quot; ENTER FIRST NUMBER &quot;" newline="True"/>
+            <input variable="A"/>
+            <output expression="&quot; ENTER SECOND NUMBER &quot;" newline="True"/>
+            <input variable="B"/>
+            <comment text="APPLYING MATHEMATICAL OPERATIONS FOR SWAPPING THE VALUES OF A AND B"/>
+            <assign variable="A" expression="A + B"/>
+            <assign variable="B" expression="A-B"/>
+            <assign variable="A" expression="A-B"/>
+            <output expression="&quot;B&quot;   &amp;   B" newline="True"/>
+            <output expression="&quot; A &quot;  &amp;   A" newline="True"/>
+            <comment text="WE GET THE SWAPPED VALUE"/>
+        </body>
+    </function>
+</flowgorithm>
