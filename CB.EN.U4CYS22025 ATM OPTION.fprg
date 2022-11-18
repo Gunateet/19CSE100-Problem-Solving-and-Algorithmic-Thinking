@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22025"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 10:51:20 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNTsyMDIyMjNNQVlDMDA2MjsyMDIyLTExLTE4OzA4OjU5OjM0IEFNOzMwNzE="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNTsyMDIyMjNNQVlDMDA2MjsyMDIyLTExLTE4OzEwOjUxOjIwIEFNOzE5OzMyMTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declare variables"/>
+            <declare name="account" type="Integer" array="False" size=""/>
+            <declare name="Name" type="String" array="False" size=""/>
+            <declare name="Pin, Balance, AvailableBalance" type="Real" array="False" size=""/>
+            <declare name="withdrawingMoney" type="Real" array="False" size=""/>
+            <comment text="Enter the following details"/>
+            <output expression="&quot;Enter account&quot;" newline="True"/>
+            <input variable="ACCOUNT"/>
+            <output expression="&quot;Enter Name&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Enter pin&quot;" newline="True"/>
+            <input variable="PIN"/>
+            <comment text="Enter Valid pin"/>
+            <if expression="pin=1234">
+                <then>
+                    <assign variable="Balance" expression="10000"/>
+                    <output expression="&quot;Balance = 10000&quot;" newline="True"/>
+                    <output expression="&quot;enter withdrawingMoney &quot;" newline="True"/>
+                    <comment text="Enter the amount to be withdrawn"/>
+                    <input variable="withdrawingMoney"/>
+                    <if expression="withdrawingMoney&gt;499">
+                        <then>
+                            <if expression="withdrawingMoney&lt;Balance">
+                                <then>
+                                    <output expression="&quot;withdrawl successful of&quot;&amp; withdrawingMoney" newline="True"/>
+                                    <assign variable="AvailableBalance" expression="Balance-withdrawingMoney"/>
+                                    <output expression="&quot;available balance is&quot;&amp; AvailableBalance" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;insufficient Balance &quot;" newline="True"/>
+                                </else>
+                            </if>
+                            <comment text="withdrawl detail and available balance detail is available"/>
+                        </then>
+                        <else>
+                            <output expression="&quot; MINIMUM WITHDRAWABLE BALANCE IS 500&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot; enter the correct pin&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
