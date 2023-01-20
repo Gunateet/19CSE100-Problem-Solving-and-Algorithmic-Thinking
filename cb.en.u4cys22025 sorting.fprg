@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22025"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 11:07:22 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAyNTsyMDIyMjNNQVlDMDA2MjsyMDIzLTAxLTIwOzEwOjIxOjIyIEFNOzMyOTk="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAyNTsyMDIyMjNNQVlDMDA2MjsyMDIzLTAxLTIwOzExOjA3OjIyIEFNOzM7MzQxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declaring variables"/>
+            <declare name="i, j, e, d" type="Integer" array="False" size=""/>
+            <declare name="a" type="Integer" array="True" size="5"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;enter the element&quot; &amp;i+1" newline="True"/>
+                <input variable="a[i]"/>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <for variable="j" start="0" end="4" direction="inc" step="1">
+                    <assign variable="e" expression="a[i]"/>
+                    <assign variable="d" expression="a[j]"/>
+                    <comment text="swapping"/>
+                    <if expression="a[i]&gt;a[j]">
+                        <then>
+                            <assign variable="a[i]" expression="d"/>
+                            <assign variable="a[j]" expression="e"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <comment text="getting in descending order"/>
+                <output expression="a[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
